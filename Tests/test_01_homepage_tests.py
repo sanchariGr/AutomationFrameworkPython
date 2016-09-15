@@ -1,13 +1,12 @@
 import unittest
-import requests
-import json
-import os
-from homepage import Homepage
+from selenium import webdriver
 
 
 class HomepageTests(unittest.TestCase):
+    def setUp(self):
+        self.browser = webdriver.Chrome()
+        self.browser.maximize_window()
 
-    def blahhah(self):
 
 
 

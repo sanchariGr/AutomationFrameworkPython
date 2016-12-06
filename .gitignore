@@ -1,0 +1,9 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#PyCharm File
+*.idea
+*.class
+*.config
+*.pyc

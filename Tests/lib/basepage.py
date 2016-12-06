@@ -41,7 +41,7 @@ class UserDetails(BasePage):
 
         submit_button = self.driver.find_element_by_css_selector("#auth-create-account-button #continue")
         submit_button.click()
-        # pdb.set_trace()
+       
 
     def verify_user_creation(self):
         self.driver.implicitly_wait(10)
@@ -67,7 +67,7 @@ class UserDetails(BasePage):
     def confirm(self):
         confirm_login = self.driver.find_element_by_css_selector("#signInSubmit")
         confirm_login.click()
-        
+
 
     def verify_login(self):
         verify_username = self.driver.find_element_by_css_selector("#nav-link-yourAccount .nav-line-1").text
